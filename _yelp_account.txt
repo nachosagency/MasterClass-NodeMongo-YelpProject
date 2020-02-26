@@ -1,0 +1,9 @@
+1/ Go to https://www.yelp.fr/fusion
+2/ Create an account (@golgl.xyz)
+3/ Créer une app sur https://www.yelp.fr/developers/v3/manage_app
+4/ Noter le Client ID et API Key
+    Client ID : 2GYw2O9hPVDYvzkj7ZP5Xg
+    API Key : CbABV-hm2qWs1z2SfbzSIhD7KtoLLOmDvZfDHWkvKel0fDwC0H0wXNz-B0TVCYaYMkWeblYq-ptR7WwZtRWXNgj6uywScKOSoyUyt7Gca6eQiY0qkpvsuu80i1xWXnYx
+5/ S'inscrire au programme Developer Beta
+6/ Aller étudier la page https://www.yelp.fr/developers/documentation/v3/business_search 
+7/ API Endpoint : https://api.yelp.com/v3/businesses/search?term=chinese+food&location=bordeaux

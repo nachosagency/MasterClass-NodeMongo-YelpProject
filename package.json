@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/nachosagency/MasterClass-NodeMongo-YelpProject/issues"
   },
-  "homepage": "https://github.com/nachosagency/MasterClass-NodeMongo-YelpProject#readme"
+  "homepage": "https://github.com/nachosagency/MasterClass-NodeMongo-YelpProject#readme",
+  "dependencies": {
+    "async": "^3.2.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.4",
+    "mysql": "^2.18.1",
+    "request": "^2.88.2"
+  }
 }
