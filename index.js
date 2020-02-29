@@ -5,12 +5,12 @@ var fs = require("fs");
 
 var app = express();
 app.engine(".html", require("ejs").__express);
-app.set("views", __dirname + "views/");
+app.set("views", __dirname + "/views");
 app.set("view engine", "html");
 var templateVersion = 'v1';
 
 app.get("/", function(req, res){
-    res.render(templateVersion+'-index', {
+    res.render(templateVersion+'_index', {
         searchTag: '',
         searchAddress: '',
         bizFromApi: []
@@ -19,7 +19,7 @@ app.get("/", function(req, res){
 
 app.get("/search", function(req, res){
 
-    res.render(templateVersion+'-index', {
+    res.render(templateVersion+'_index', {
         searchTag: '',
         searchAddress: '',
         bizFromApi: []
