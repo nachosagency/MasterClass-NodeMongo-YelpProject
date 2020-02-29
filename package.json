@@ -19,6 +19,7 @@
   "homepage": "https://github.com/nachosagency/MasterClass-NodeMongo-YelpProject#readme",
   "dependencies": {
     "async": "^3.2.0",
+    "ejs": "^3.0.1",
     "express": "^4.17.1",
     "mongodb": "^3.5.4",
     "mysql": "^2.18.1",
