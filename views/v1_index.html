@@ -33,7 +33,7 @@
                             <a class="tab-list__link isDisabled" href="#tab2" data-toggle="tab">Voitures</a>
                         </li>
                         <li class="tab-list__item active">
-                            <a class="tab-list__link" href="#tab3" data-toggle="tab">restaurants</a>
+                            <a class="tab-list__link" href="/" data-toggle="tab">restaurants</a>
                         </li>
                     </ul>
                     <div class="tab-content">
@@ -53,9 +53,16 @@
                             </form>
                         </div>
                         
-                        <% if ( bizFromApi.length > 0 ){ %>
+                        <% if ( bizFromApi != null && bizFromApi.length > 0 ){ %>
                             <div class="search_results" id="search_results">
-                                
+                                <% for (let business of bizFromApi ){ %>
+                                    <div style="width:33%;display:inline-block;margin:15px 0;">
+                                        <a target="_blank" href=" <%= business.url %>">
+                                            <img src="<%= business.image_url %>" style="width:100%;" /><br />
+                                            <%= business.name %>
+                                        </a>
+                                    </div>
+                                <% } %>
                             </div>
                         <% } %>
                     </div>
