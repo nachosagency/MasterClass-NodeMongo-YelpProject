@@ -4,5 +4,6 @@ $ npx license mit > LICENSE
 $ npx gitignore node
 $ npx covgen YOUR_EMAIL_ADDRESS
 $ npm init -y
+$ sudo npm install -g nodemon --save OU npm install --save-dev nodemon 
 
 You're ready to start coding.
