@@ -15,6 +15,7 @@ app.use(express.json()); // Analyser les requêtes JSON (envoyés par les client
 var templateVersion = 'v1';
 
 app.get("/", function(req, res){
+    //res.send('Test', 200); res.end();
     res.render(templateVersion+'_index', {
         searchTag: '',
         searchAddress: '',
@@ -23,6 +24,7 @@ app.get("/", function(req, res){
 });
 
 app.post("/search", function(req, res){
+    //res.send('Test', 200); res.end();
     var _url = 'https://api.yelp.com/v3/businesses/search?term='+(( req.body.search_term ) ? req.body.search_term : '')+'&location='+(( req.body.address ) ? req.body.address : '')+'';
     request(_url, 
                 { json: true, 'auth': { 'bearer': 'uPFVvL6aObdtBJUs1uWBTaRgaDaOpOhuWQVcFj3zIo30oqMXPqOCv5XyIYsZkXkd2gWBuVRp8GVl0nVUAQ17RfoFEZkBHBuhT3BhJgMfOwxZM4owN8sUF_93rYJBXXYx' } }, 
